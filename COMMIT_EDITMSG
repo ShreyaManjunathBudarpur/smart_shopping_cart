@@ -1,0 +1,13 @@
+Assistant checkpoint: Removed product images and cleaned up image references
+
+Assistant generated file changes:
+- server/storage.ts: Remove sample product image URLs
+
+---
+
+User prompt:
+
+undo the changes remove all the images
+
+Replit-Commit-Author: Assistant
+Replit-Commit-Session-Id: 2aea05f1-a555-46e8-a22d-222734aefd4b
