@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Shopping Cart - QR Code</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f9f9fb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            max-width: 500px;
+            width: 90%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 32px;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #7c3aed;
+            margin-bottom: 24px;
+            font-size: 1.8rem;
+        }
+        .qr-container {
+            display: flex;
+            justify-content: center;
+            margin: 24px 0;
+        }
+        .qr-image {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 8px;
+            background: white;
+        }
+        .instructions {
+            background-color: #f3f4f6;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 24px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .instructions p {
+            margin: 8px 0;
+        }
+        .highlight {
+            background-color: #ede9fe;
+            color: #5b21b6;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .footer {
+            margin-top: 24px;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        .logo {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #7c3aed;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🛒 Smart Cart</div>
+        <h1>Scan to Start Shopping</h1>
+        
+        <div class="qr-container">
+            <img src="/temp_qr/smart-cart-qr.png" alt="Smart Cart QR Code" class="qr-image">
+        </div>
+        
+        <div class="instructions">
+            <p><strong>How to use:</strong></p>
+            <p>1. Open your phone's camera app</p>
+            <p>2. Point it at the QR code above</p>
+            <p>3. Tap the notification that appears</p>
+            <p>4. Set your budget and start shopping!</p>
+        </div>
+        
+        <div class="instructions" style="margin-top: 20px;">
+            <p><strong>Direct Access:</strong></p>
+            <p>If the QR code doesn't work on your mobile device, use one of these options:</p>
+            <p><a href="/welcome" class="launch-button">Launch Smart Cart App</a></p>
+            <p><a href="/public-url" class="launch-button" style="background-color: #059669;">Get Public URL for Mobile</a></p>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #666;">Note: The "localhost" URL only works on this computer</p>
+        </div>
+
+        <style>
+            .launch-button {
+                display: inline-block;
+                background-color: #7c3aed;
+                color: white;
+                font-weight: bold;
+                padding: 12px 24px;
+                border-radius: 8px;
+                text-decoration: none;
+                margin: 10px 0;
+                transition: background-color 0.2s;
+            }
+            .launch-button:hover {
+                background-color: #6d28d9;
+            }
+        </style>
+        
+        <div class="footer">
+            <p>This QR code links to your Smart Shopping Cart application.</p>
+            <p>Powered by Smart Cart Technology</p>
+        </div>
+    </div>
+</body>
+</html>
